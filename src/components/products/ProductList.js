@@ -6,18 +6,11 @@ import * as productActions from "../../redux/actions/productActions";
 import * as cartActions from "../../redux/actions/cartActions";
 import { Table, Button } from "reactstrap";
 import alertify from "alertifyjs";
-<<<<<<< HEAD
 import { Link } from "react-router-dom";
-=======
->>>>>>> 74f4b6817bbcbefa34e3344f32c8d521e61868dd
 
 class ProductList extends Component {
   componentDidMount() {
     this.props.actions.getProducts();
-<<<<<<< HEAD
-=======
-    
->>>>>>> 74f4b6817bbcbefa34e3344f32c8d521e61868dd
   }
 
   addToCart = (product) => {
@@ -49,16 +42,12 @@ class ProductList extends Component {
             {this.props.products.map((product) => (
               <tr key={product.id}>
                 <th scope="row">{product.id}</th>
-<<<<<<< HEAD
                 <td>
                   <Link to={"/saveproduct/" + product.id}>
                     {" "}
                     {product.productName}
                   </Link>
                 </td>
-=======
-                <td>{product.productName}</td>
->>>>>>> 74f4b6817bbcbefa34e3344f32c8d521e61868dd
                 <td>{product.unitPrice}</td>
                 <td>{product.quantityPerUnit}</td>
                 <td>{product.unitsInStock}</td>
